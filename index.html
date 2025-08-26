@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guillem the Frutem (PERA) — The PEAR on Solana</title>
+  <meta name="description" content="Guillem the Frutem (PERA) is THE PEAR — a meme asset on Solana: fast chain, fun community, transparent launch. Grab your PERA and join the Frutem Army.">
+  <link rel="icon" type="image/png" href="assets/logo-pera.png">
+  <meta property="og:title" content="Guillem the Frutem (PERA) — The PEAR on Solana" />
+  <meta property="og:description" content="Join the Frutem Army! Fast, fun, and transparent meme token on Solana." />
+  <meta property="og:image" content="assets/og-pera.png" />
+  <meta property="og:type" content="website" />
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:title" content="Guillem the Frutem (PERA) — The PEAR on Solana" />
+  <meta property="twitter:description" content="Fast chain, fun community, transparent launch. Grab your PERA and join the Frutem Army." />
+  <meta property="twitter:image" content="assets/og-pera.png" />
+  <!-- Google Fonts: Inter (or Poppins as fallback) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- SEO robots/sitemap: add robots.txt & sitemap.xml in root -->
+  <!--
+    robots.txt: User-agent: * Disallow:
+    sitemap.xml: <urlset>...</urlset>
+  -->
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Guillem the Frutem (PERA)",
+      "url": "https://pera-meme.sol", 
+      "logo": "assets/logo-pera.png",
+      "sameAs": [
+        "https://twitter.com/pera_token",
+        "https://t.me/pera_community",
+        "https://discord.gg/pera"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="nav-logo">
+        <a href="#hero" aria-label="Home">
+          <img src="assets/logo-pera.png" alt="PERA logo: a smiling pear" width="40" height="40">
+          <span class="nav-title">PERA</span>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu" role="menubar">
+        <li><a href="#about" role="menuitem">About</a></li>
+        <li><a href="#tokenomics" role="menuitem">Tokenomics</a></li>
+        <li><a href="#how-to-buy" role="menuitem">How to Buy</a></li>
+        <li><a href="#roadmap" role="menuitem">Roadmap</a></li>
+        <li><a href="#faq" role="menuitem">FAQ</a></li>
+        <li><a href="#community" role="menuitem">Community</a></li>
+        <li><a href="#hero" class="btn cta-nav" role="menuitem">Buy PERA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-content glass fade-in">
+        <div class="hero-text">
+          <h1>Guillem the Frutem — The PEAR on Solana</h1>
+          <p class="subtitle">Fast chain, fun community, transparent launch. Grab your PERA and join the Frutem Army.</p>
+          <div class="hero-ctas">
+            <a href="https://raydium.io/#swap?outputCurrency=PLACEHOLDER" target="_blank" rel="noopener" class="btn btn-primary">Buy on Raydium/Jupiter</a>
+            <a href="#" class="btn btn-secondary">View Contract</a>
+          </div>
+          <div class="contract">
+            <span class="contract-label">Contract:</span>
+            <span id="contract-address" class="contract-value">9x...PERA...123</span>
+            <button id="copy-contract" class="copy-btn" aria-label="Copy contract to clipboard">
+              <svg width="18" height="18" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><rect x="7" y="3" width="14" height="14" rx="2" fill="#A3E635"/><rect x="3" y="7" width="14" height="14" rx="2" fill="none" stroke="#A3E635" stroke-width="2"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="assets/logo-pera.png" alt="PERA mascot, a smiling pear" width="220" height="220" loading="lazy">
+        </div>
+      </div>
+      <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+      <div class="container glass">
+        <h2>What is PERA?</h2>
+        <p>Guillem the Frutem isn’t just a pear; it’s a community-first meme asset built on Solana.<br>
+          No empty promises—just speed, transparency and memes.</p>
+        <div class="features">
+          <div class="feature-card slide-in">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="48" height="48">
+            <h3>Community Power</h3>
+            <p>Driven by the Frutem Army. Organic, meme-fueled growth.</p>
+          </div>
+          <div class="feature-card slide-in">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="48" height="48">
+            <h3>Solana Speed</h3>
+            <p>Lightning-fast, low-fee transactions on Solana.</p>
+          </div>
+          <div class="feature-card slide-in">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="48" height="48">
+            <h3>Transparency</h3>
+            <p>Fair launch, locked liquidity, open source, no hidden taxes.</p>
+          </div>
+          <div class="feature-card slide-in">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="48" height="48">
+            <h3>Fun & Virality</h3>
+            <p>Marketing with memes, challenges, and viral collabs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section fade-in">
+      <div class="container glass">
+        <h2>Tokenomics</h2>
+        <div class="tokenomics-cards">
+          <div class="tokenomics-card">
+            <h3>Total Supply</h3>
+            <p>1,000,000,000 PERA</p>
+          </div>
+          <div class="tokenomics-card">
+            <h3>Liquidity Locked</h3>
+            <p>900,000,000 PERA</p>
+            <div class="liquidity-lock">
+              <span id="lock-countdown" aria-live="polite">Liquidity lock ends in: 30d 12h 00m</span>
+            </div>
+          </div>
+          <div class="tokenomics-card">
+            <h3>Community</h3>
+            <p>70%</p>
+          </div>
+          <div class="tokenomics-card">
+            <h3>Marketing</h3>
+            <p>15%</p>
+          </div>
+          <div class="tokenomics-card">
+            <h3>CEX/LP</h3>
+            <p>10%</p>
+          </div>
+          <div class="tokenomics-card">
+            <h3>Treasury</h3>
+            <p>5%</p>
+          </div>
+        </div>
+        <div class="tokenomics-graph" aria-label="Tokenomics distribution">
+          <div class="graph-bar">
+            <span style="width:70%; background:#A3E635;" aria-label="Community 70%"></span>
+            <span style="width:15%; background:#22D3EE;" aria-label="Marketing 15%"></span>
+            <span style="width:10%; background:#A3E635;" aria-label="CEX/LP 10%"></span>
+            <span style="width:5%; background:#22D3EE;" aria-label="Treasury 5%"></span>
+          </div>
+          <div class="graph-labels">
+            <span>Community</span>
+            <span>Marketing</span>
+            <span>CEX/LP</span>
+            <span>Treasury</span>
+          </div>
+        </div>
+        <p class="no-taxes">No taxes. 100% meme. <span aria-label="No taxes">🍐</span></p>
+      </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="how-to-buy" class="section fade-in">
+      <div class="container glass">
+        <h2>How to Buy PERA</h2>
+        <ol class="buy-steps">
+          <li>
+            <strong>Install Phantom</strong>
+            <p>Get the Phantom wallet extension or mobile app.</p>
+          </li>
+          <li>
+            <strong>Add SOL</strong>
+            <p>Fund your wallet with Solana (SOL).</p>
+          </li>
+          <li>
+            <strong>Connect Wallet</strong>
+            <p>Connect Phantom to Raydium or Jupiter.</p>
+          </li>
+          <li>
+            <strong>Buy on Raydium/Jupiter</strong>
+            <div class="buy-links">
+              <a href="https://raydium.io/#swap?outputCurrency=PLACEHOLDER" class="btn btn-primary" target="_blank" rel="noopener">Raydium</a>
+              <a href="https://jup.ag/swap/PERA-PLACEHOLDER" class="btn btn-secondary" target="_blank" rel="noopener">Jupiter</a>
+            </div>
+          </li>
+        </ol>
+        <p class="slippage-note">Suggested slippage: <strong>0.5–1%</strong> (placeholder)</p>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section fade-in">
+      <div class="container glass">
+        <h2>Roadmap</h2>
+        <div class="roadmap-timeline">
+          <div class="roadmap-phase slide-in">
+            <span class="phase-title">Phase 1: Plant the Tree</span>
+            <p>Launch, website, verification.</p>
+          </div>
+          <div class="roadmap-phase slide-in">
+            <span class="phase-title">Phase 2: Water with FOMO</span>
+            <p>Memes, community, DEX listings.</p>
+          </div>
+          <div class="roadmap-phase slide-in">
+            <span class="phase-title">Phase 3: Harvest Adoption</span>
+            <p>Marketing collabs, tools, utility experiments.</p>
+          </div>
+          <div class="roadmap-phase slide-in">
+            <span class="phase-title">Phase 4: Pear to the Moon</span>
+            <p>CEX listings, light utilities, community expansion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team & Community Section -->
+    <section id="community" class="section fade-in">
+      <div class="container glass">
+        <h2>Team & Community</h2>
+        <p>PERA is run by the Frutem Army. No team, only memes. Mascot: Guillem the Frutem (the pear with a face).</p>
+        <div class="community-links">
+          <a href="https://twitter.com/pera_token" target="_blank" rel="noopener" aria-label="X/Twitter (placeholder)">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="32" height="32">
+          </a>
+          <a href="https://t.me/pera_community" target="_blank" rel="noopener" aria-label="Telegram (placeholder)">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="32" height="32">
+          </a>
+          <a href="https://discord.gg/pera" target="_blank" rel="noopener" aria-label="Discord (placeholder)">
+            <img src="assets/logo-pera.png" alt="PERA logo" width="32" height="32">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section fade-in">
+      <div class="container glass">
+        <h2>FAQ</h2>
+        <div class="faq-list" role="list" aria-label="Frequently Asked Questions">
+          <div class="faq-item" tabindex="0">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+              ¿Qué es PERA?
+              <span class="faq-arrow"></span>
+            </button>
+            <div id="faq1" class="faq-answer" hidden>
+              Guillem the Frutem (PERA) es un meme-token comunitario en Solana. ¡Solo memes y transparencia!
+            </div>
+          </div>
+          <div class="faq-item" tabindex="0">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+              ¿En qué red está PERA?
+              <span class="faq-arrow"></span>
+            </button>
+            <div id="faq2" class="faq-answer" hidden>
+              PERA vive en la red Solana: rápida, descentralizada y de bajo coste.
+            </div>
+          </div>
+          <div class="faq-item" tabindex="0">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+              ¿Cuál es el contrato de PERA?
+              <span class="faq-arrow"></span>
+            </button>
+            <div id="faq3" class="faq-answer" hidden>
+              El contrato es: 9x...PERA...123 (placeholder).
+            </div>
+          </div>
+          <div class="faq-item" tabindex="0">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+              ¿Hay impuestos?
+              <span class="faq-arrow"></span>
+            </button>
+            <div id="faq4" class="faq-answer" hidden>
+              No hay impuestos. 100% meme y comunidad.
+            </div>
+          </div>
+          <div class="faq-item" tabindex="0">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+              ¿Cuáles son los riesgos?
+              <span class="faq-arrow"></span>
+            </button>
+            <div id="faq5" class="faq-answer" hidden>
+              Crypto es volátil. No hay valor intrínseco ni garantías. Haz tu propia investigación.
+            </div>
+          </div>
+          <div class="faq-item" tabindex="0">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+              ¿Cómo compro PERA?
+              <span class="faq-arrow"></span>
+            </button>
+            <div id="faq6" class="faq-answer" hidden>
+              Instala Phantom, añade SOL, conecta la wallet y compra en Raydium/Jupiter con slippage 0.5–1%.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="disclaimer">
+        PERA is a community-driven meme token with no intrinsic value or guaranteed returns. Crypto is volatile—do your own research.
+      </p>
+      <nav aria-label="Footer navigation" class="footer-links">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms">Terms of Use</a>
+        <a href="#cookies">Cookies</a>
+      </nav>
+    </div>
+    <p class="copyright">&copy; 2025 Guillem the Frutem (PERA). All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
